@@ -1,0 +1,130 @@
+/* General styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-bottom: 100px; /* spacing for fixed footer */
+}
+
+/* Header */
+header {
+  background-color: #0300b9;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+/* Navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #009e61;
+  border-bottom: 15px solid #5e31ff;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #d9ff00;
+  color: black;
+}
+
+/* Container */
+#container {
+  margin: 2% 5% 100px 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 80%;
+  max-width: 700px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 0 auto 40px 40px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  text-align: center;
+  font-size: 2em;
+  color: #0300b9;
+  font-weight: 400;
+  padding: 16px;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content a {
+  color: #009e61;
+  text-decoration: none;
+}
+
+.card-content a:hover {
+  text-decoration: underline;
+}
+
+/* Movies Table */
+#movies {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#movies th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+
+#movies td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #0300b9;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+footer p {
+  color: white;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
