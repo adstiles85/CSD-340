@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Andrew Stiles
+    Course: CSD-340
+    Professor: Osier
+    Assignment 9.3: JavaScript - Part 1
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Andrew Stiles">
+  <meta name="description" content="Assignment 9.3 - JavaScript Exercise, Part 1">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSD 340 Web Development with HTML and CSS</title>
+  <link rel="stylesheet" href="astiles_mod4_2.css">
+
+  <script>
+    var firstWord = "aerial";
+    var secondWord = "victory";
+    var thirdWord = "freedom";
+    var fourthWord = "united";
+  </script>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Assignment 9.3: JavaScript - Part 1</h1>
+
+    <p>President Whitmore's Speech</p>
+
+    <p>
+      Good morning. Good morning. In less than an hour, aircraft from here will join others from around the world and you will be launching the largest 
+      <span id="blank1">__________</span> battle in the history of mankind.
+      That word should have new meaning for all of us today. 
+      We can't be consumed by our petty differences anymore. We will be 
+      <span id="blank2">__________</span> in our common interest, perhaps space.
+      Today's the Fourth of July, and you will once again be fighting for our 
+      <span id="blank3">__________</span>.
+    </p>
+
+    <p>
+      Not from tyranny, oppression, or persecution, but from annihilation. 
+      We're fighting for our right to live. 
+      And should we win the day, the Fourth of July will no longer be known as an American holiday, 
+      but as the day when the world declared in one voice: 
+      We will not go quietly into the night! We will not vanish without a fight!
+      We're going to live on. 
+      We're going to survive. 
+      Today, we celebrate our 
+      <span id="blank4">__________</span>!
+    </p>
+
+    <p>
+      <button type="button" onclick="document.getElementById('blank1').innerHTML = firstWord">aerial</button>
+      <button type="button" onclick="document.getElementById('blank2').innerHTML = fourthWord">united</button>
+      <button type="button" onclick="document.getElementById('blank3').innerHTML = thirdWord">freedom</button>
+      <button type="button" onclick="document.getElementById('blank4').innerHTML = secondWord">victory</button>
+    </p>
+
+    <div class="bottom-nav">
+      <a href="../index.html">back to Landing Page</a>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: rgba(204, 85, 0, 0.9);
+    margin-top: 40px;
+  }
+  
+  #image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 10%;
+  }
+  
+  .book-card {
+    border: 1px solid rgba(204, 85, 0, 0.9);
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .book-card h3 {
+    text-align: center;
+    color: rgba(204, 85, 0, 0.9);
+  }
+  
+  figure {
+    text-align: center;
+  }
+  
+  figure img {
+    width: 120px;
+  }
+  
+  figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(204, 85, 0, 0.9);
+    margin-top: 8px;
+  }
+  
+  .bottom-nav {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    float: right;
+    text-align: right;
+  }
+  
+  a {
+    color: purple;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }  
+  
