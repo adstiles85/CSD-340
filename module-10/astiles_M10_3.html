@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSD 340 Web Development with HTML and CSS</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #0300b9;
+    }
+
+    .thumbnail {
+      width: 100px;
+      height: 70px;
+      margin: 10px;
+      border: 2px solid #ccc;
+      cursor: pointer;
+      transition: border 0.3s;
+    }
+
+    .thumbnail:hover {
+      border-color: #0300b9;
+    }
+
+    .main-image {
+      width: 400px;
+      height: 280px;
+      margin-top: 20px;
+      border: 4px solid #0300b9;
+    }
+
+    footer {
+        margin-top: 40px;
+        padding: 10px;
+        background-color: #0300b9;
+        color: white;
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+  </style>
+
+  <script>
+    function displayImage(imageFile) {
+      const mainImage = document.getElementById("mainImage");
+      mainImage.src = imageFile;
+    }
+  </script>
+</head>
+<body>
+
+  <h1>Assignment 10.3: JavaScript - Part 2</h1>
+  <p>Click on any thumbnail below to display a larger version of the image above.</p>
+
+  <div style="display: flex; justify-content: center; gap: 20px;">
+    <div>
+      <img src="HaloSmall.jpg" alt="Halo" class="thumbnail" onclick="displayImage('HaloLarge.jpg')">
+      <p>Halo</p>
+    </div>
+    <div>
+      <img src="Helldivers2Small.jpg" alt="Helldivers 2" class="thumbnail" onclick="displayImage('Helldivers2Large.jpg')">
+      <p>Helldivers 2</p>
+    </div>
+    <div>
+      <img src="LinkBotWSmall.jpg" alt="Legend of Zelda" class="thumbnail" onclick="displayImage('LinkBotWLarge.jpg')">
+      <p>Legend of Zelda</p>
+    </div>
+  </div>  
+
+  <!-- Main display image -->
+  <img id="mainImage" src="ColorBurst.jpg" alt="Main Display" class="main-image">
+
+</body>
+
+<footer>
+    <p><a href="https://adstiles85.github.io/CSD-340/">Back to Main Landing Page</a></p>
+</footer>  
+
+</html>
