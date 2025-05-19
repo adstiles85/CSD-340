@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Andrew Stiles" />
+  <meta name="description" content="Assignment 12.2 - JavaScript Part 4" />
+  <meta name="keywords" content="HTML, CSS, JavaScript, Lists" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSD 340 Web Development with HTML and CSS</title>
+  <link rel="stylesheet" href="astiles_mod3_3.css" />
+  <style>
+    .sort-buttons {
+      margin-bottom: 10px;
+    }
+    .sort-buttons button {
+      margin-right: 10px;
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Assignment 12.2: JavaScript - Part 4</h1>
+
+    <div class="left-list">
+      <h3>Top 10 Favorite Books</h3>
+      <div class="sort-buttons">
+        <button onclick="displayBooksAsc()">Top to Bottom</button>
+        <button onclick="displayBooksDesc()">Bottom to Top</button>
+      </div>
+      <ol id="bookList"></ol>
+    </div>
+
+    <div class="right-list">
+      <h3>5 Things I’ve Learned Since the Course Started</h3>
+      <ul>
+        <li>How to effectively navigate Gitbash</li>
+        <li>How to use VS Code for HTML/CSS projects</li>
+        <li>File Management</li>
+        <li>How to turn a GitHub repository into a site</li>
+        <li>How to use Meta Tags for Keywords</li>
+      </ul>
+    </div>
+
+    <div class="bottom-nav">
+      <a href="../index.html">back to Landing Page</a>
+    </div>
+  </div>
+
+  <script>
+    const books = [
+      "A Child Called It",
+      "The Final Empire",
+      "The Wall of Ascension",
+      "The Hero of Ages",
+      "Project Hail Mary",
+      "Halo: Fall of Reach",
+      "Night",
+      "1984",
+      "Astrophysics for People in a Hurry",
+      "The Alloy of Law"
+    ];
+
+    function displayBooksAsc() {
+      const list = document.getElementById("bookList");
+      list.innerHTML = "";
+      books.forEach((book) => {
+        const li = document.createElement("li");
+        li.textContent = book;
+        list.appendChild(li);
+      });
+    }
+
+    function displayBooksDesc() {
+      const list = document.getElementById("bookList");
+      list.innerHTML = "";
+      [...books].reverse().forEach((book) => {
+        const li = document.createElement("li");
+        li.textContent = book;
+        list.appendChild(li);
+      });
+    }
+
+    // This loads the list at first, rather than when a button is pressed.
+    window.onload = displayBooksAsc;
+  </script>
+</body>
+</html>
+
